@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chetekei.com</title>
+    <link rel="shortcut icon" type="png" href="twocs.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+    
+    
+    <header>
+        <nav>
+            <ul class='nav-bar' style="background-color: #002352">
+                <li  class="logo"><a href="/claim.html"><img width = 120px; height = 85px; src='cpicon.png'></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="/index.html">HOME</a></li>
+                    <li><a href="/products.html">PRODUCTS</a></li>
+                    <li><a class = "active" href="/claims.html">CLAIMS</a></li>       
+                    <li><a href="/login.html">LOGIN</a></li>
+                    <li><a href="/contact.html">CONTACT US</a></li>  
+                                        
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+        </header>
+    
+
+<body style="background-color: #cecece;">
+    <div class="container">
+    <form action="connect.php" method="POST">
+        <table>
+            <fieldset>
+                <legend>Insured Details</legend>
+                <tr>
+                <td>Name :</td>
+                <td><input type="text" name="user" required></td>
+                </tr>
+                <tr>
+                <td>Password :</td>
+                <td><input type="password" name="password" required></td>
+                </tr>
+                <tr>
+                <td>Gender :</td>
+                <td>
+                <input type="radio" name="gender" value="m" required>Male
+                <input type="radio" name="gender" value="f" required>Female
+                </td>
+                </tr>
+                <tr>
+                <td>Email :</td>
+                <td><input type="email" name="email" required></td>
+                </tr> 
+                <tr>
+                <td>Phone no :</td>
+                <td>
+                <select name="phoneCode" required>
+                    <option selected hidden value="">Select Code</option>
+                    <option value="977">977</option>
+                    <option value="978">978</option>
+                    <option value="979">979</option>
+                    <option value="973">973</option>
+                    <option value="972">972</option>
+                    <option value="974">974</option>
+                </select>
+                <input type="phone" name="phone" required>
+                </td>
+                </tr>
+                <tr>
+                <td><input type="submit" value="Submit" name="submit"></td>
+                </tr>
+        </table>
+       </form>
+    </div>
+
+    <style>
+
+        .container{
+
+            display: flex;            
+            justify-items: center;
+            align-items: center;
+            background-color: #F8F8F4;
+            width: 1000px;
+            height: 80%;    
+            border-radius: 20px; 
+            margin-left: 8em;
+            
+        }
+
+        table{
+            position: absolute;
+            top: 25%;
+        }
+    </style>
+   
+        
+</body>
+</html>
